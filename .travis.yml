@@ -22,7 +22,7 @@ jobs:
         - terraform plan -var-file env_vars/dev.tfvars -out build.plan
         - terraform apply build.plan
 
-# Filter to only run this pipeline when it involves actions against the master branch
+# is Filter to only run this pipeline when it involves actions against the master branch
 branches:
   only:
     - master
